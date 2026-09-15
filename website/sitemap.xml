@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Vorlage. Domain und lastmod vor dem Livegang anpassen.
+     Impressum und Datenschutz stehen bewusst auf noindex und
+     sind deshalb nicht in der Sitemap. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.gohl-consulting.de/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.gohl-consulting.de/elster-dental.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gohl-consulting.de/gohl-consulting.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>

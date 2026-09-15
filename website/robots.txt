@@ -1,0 +1,5 @@
+# Vorlage. Vor dem Livegang die Domain in der Sitemap-Zeile anpassen.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.gohl-consulting.de/sitemap.xml

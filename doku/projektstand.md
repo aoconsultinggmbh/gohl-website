@@ -1,0 +1,68 @@
+---
+titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Consulting
+kategorie: Steuerung
+kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
+stand: 14.09.2026
+version: 1.1
+---
+
+# Projektstand — Gohl Consulting und Elster Dental Consulting
+
+**Letzte Session:** 14.09.2026. Neubau der bestehenden Seite. Musterseite ausgelesen, Struktur und Texte neu, Prototyp gebaut und automatisch geprüft. Echte Logos und Fotos eingesetzt. Zusätzlich eine Vorschaufassung in einer einzigen Datei zum Doppelklicken.
+**Nächster Schritt:** Rückmeldung von Ovidiu zur Vorschaudatei, dann die offenen Entscheidungen aus der LIESMICH klären (Domain, Rechtsform Gohl, Franz Schrader, fehlende Pflichtangaben).
+**Ziel:** Zwei Markenbereiche unter einer Auswahl-Startseite, fehlerfrei, Datenschutz nachgewiesen. Zieldatum noch offen.
+
+## Ausgangslage
+
+Die Seite existiert bereits als WordPress-Entwurf unter https://b13uk60.myrdbx.io/ mit
+Auswahlseite, /dentalbereich/ und /consultingbereich/. Der Auftrag lautet: optisch neu
+bauen, Farben und Schriften beibehalten, Texte neu schreiben, SEO und GEO sauber
+aufsetzen. Der Neubau liegt in `04_stufe-4_prototyp-und-freigabe/output/website/`.
+
+## Standscheibe pro Stufe
+
+| Stufe | Status | Kurznotiz |
+|---|---|---|
+| 0 Setup + Projektprofil | 🟡 in Arbeit | Profil nur teilweise gefüllt, Grundentscheidungen 1 bis 7 fehlen |
+| 1 Fundament & Ist-Analyse | 🟡 teilweise | Musterseite, Farben, Schriften, Rechtstexte und Fehler der Altseite erfasst. Zugänge und Keyword-Recherche fehlen |
+| 2 Strategie & Architektur | ✅ fertig | Auswahlseite plus zwei Markenbereiche, Sektionsfolge festgelegt und freigegeben |
+| 3 Inhalte & Texte | 🟡 in Arbeit | Alle Texte neu geschrieben. Fachliche Freigabe durch die Kundin steht aus |
+| 4 **Prototyp & Freigabe** | 🟡 in Arbeit | Prototyp gebaut und geprüft. ⚠️ Freigabe-Gate, schriftliche Kundenfreigabe fehlt |
+| 5 Umsetzung & Technik | ⬜ offen | erst nach Freigabe |
+| 6 Datenschutz, Recht & Tracking | 🟡 vorbereitet | Gerüste stehen, Pflichtangaben fehlen, siehe Blocker |
+| 7 Launch & Migration | ⬜ offen | |
+| 8 Betrieb & Optimierung | ⬜ offen (Zyklus) | |
+
+Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 blockiert
+
+## Blocker
+
+| Blocker | Blockiert | Wer löst es | Seit |
+|---|---|---|---|
+| ~~Logos und Bilder fehlen~~ **erledigt am 14.09.2026.** Logos als .ai geliefert und verlustfrei nach SVG gewandelt, sieben Fotos von Isabel Gohl eingesetzt. Originale liegen in `04_.../input/vorlagen/` | | | |
+| Beide Datenschutzerklärungen waren auf der Altseite leer | Stufe 6 und Livegang | Kundin, mit Hoster-Angaben | 14.09.2026 |
+| Impressum: Registergericht, USt-IdNr., Telefonnummer Elster fehlen | Livegang | Kundin | 14.09.2026 |
+| Domain nicht entschieden: eine Domain für beide Marken oder zwei | canonical, Sitemap, Struktur | Ovidiu mit Kundin | 14.09.2026 |
+| Fachliche Freigabe der Leistungstexte fehlt (Haftungsthema) | Stufe 3 abschließen | Kundin | 14.09.2026 |
+
+## Was der Kunde noch liefern muss
+
+| Material / Zugang | Zugesagt bis | Status |
+|---|---|---|
+| ~~Logo Elster Dental~~ | 14.09.2026 | ✅ geliefert |
+| ~~Logo Gohl Consulting~~ | 14.09.2026 | ✅ geliefert |
+| ~~Fotos Isabel Gohl~~ | 14.09.2026 | ✅ sieben Motive geliefert |
+| Schriftliche Bildeinwilligung für alle Personenbilder | offen | fehlt |
+| Registergericht, Registernummer, USt-IdNr. beider Firmen | offen | fehlt |
+| Telefonnummer Elster Dental Consulting GmbH | offen | fehlt |
+| Hoster-Angaben und Auftragsverarbeitungsvertrag | offen | fehlt |
+| Beleg für die Aussage „über 10 Jahre Erfahrung“ | offen | fehlt, Aussage bis dahin nicht auf der Seite |
+
+## Session-Historie
+
+| Datum | Was passiert ist |
+|---|---|
+| 14.09.2026 | Projekt aus der Vorlage angelegt. Musterseite b13uk60.myrdbx.io vollständig ausgelesen (Farben, Schriften, Bilder, Impressen, leere Datenschutzseiten, fehlerhafte FAQ im Dentalbereich). Everto Consulting als Stilreferenz gesichtet. Struktur- und Textskizze abgestimmt und freigegeben. Prototyp gebaut: Auswahl-Startseite, zwei Markenbereiche, vier Rechtsseiten, Barrierefreiheits-Widget, Einwilligungsmodul, lokale Poppins, WebP mit sprechenden Dateinamen, JSON-LD inklusive FAQPage. Automatische Prüfung mit Playwright über HTTP bei neun Breiten, keine offenen Fehler. Zwei Verbesserungen am gemeinsamen Einwilligungsmodul, siehe LIESMICH. |
+| 14.09.2026 | Echte Logos (.ai, PDF-basiert) nach SVG gewandelt, je Untergrund eingefärbt, Favicons aus dem Signet gebaut. Sieben Fotos von Isabel Gohl aufbereitet, sechs davon eingesetzt, jedes Motiv nur einmal je Seite. Auswahl-Startseite umgebaut: Verlauf jetzt waagerecht, Logo und Nummer oben, Gesicht rechts. Vorschaufassung `vorschau-gohl-elster.html` erzeugt, alles eingebettet, laeuft per Doppelklick ohne Server. Alte Platzhalterbilder liegen in `img/_alt-platzhalter/` und koennen geloescht werden. |
+| 14.09.2026 | Zweiter Geschäftsführer Franz Schrader aufgenommen, Über uns als zwei gleichwertige Karten, Texte in die Wir-Form, beide als `founder` im JSON-LD. Portraitzuschnitte nachgemessen und mittig gesetzt. Icons zentriert und in einheitlicher Größe, Ursache war eine zu breit gefasste CSS-Regel. Barrierefreiheits-Knopf auf der dunklen Seite umgefärbt, Kontrast gemessen. Gleichstellungshinweis je Marke als eigene Seite, aus jeder Fußzeile verlinkt. Fußzeile mit Copyright und Signatur „Made by AO Consulting" auf allen neun Seiten. |
+| 15.09.2026 | Logos auf Auswahlseite und im Kopfbereich vergrößert, fehlende Handy-Regel für das Gohl-Logo ergänzt. Fuß der Auswahlseite zweispaltig neu gebaut, je Firma vollständige Kontakt- und Rechtsangaben, Trennstriche auf gemessen gleicher Höhe. Ortsangabe bei den beiden Geschäftsführenden durch „Schwerpunkt Beratung Zahnmedizin" ersetzt. Trefferfläche der Menüpunkte auf 44 px. Telefon im Kontaktformular auf Kundenwunsch Pflichtfeld, Vorbehalt zur Datenminimierung in der LIESMICH festgehalten. Hinweisband aus der Vorschaudatei und aus dem Bauskript entfernt. LIESMICH auf Version 0.7. |
