@@ -2,14 +2,14 @@
 titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Consulting
 kategorie: Steuerung
 kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
-stand: 14.09.2026
-version: 1.1
+stand: 18.09.2026
+version: 1.2
 ---
 
 # Projektstand — Gohl Consulting und Elster Dental Consulting
 
-**Letzte Session:** 14.09.2026. Neubau der bestehenden Seite. Musterseite ausgelesen, Struktur und Texte neu, Prototyp gebaut und automatisch geprüft. Echte Logos und Fotos eingesetzt. Zusätzlich eine Vorschaufassung in einer einzigen Datei zum Doppelklicken.
-**Nächster Schritt:** Rückmeldung von Ovidiu zur Vorschaudatei, dann die offenen Entscheidungen aus der LIESMICH klären (Domain, Rechtsform Gohl, Franz Schrader, fehlende Pflichtangaben).
+**Letzte Session:** 18.09.2026. Vorstellung der Vorschau bei der Kundin per Videocall. Design, Farben und Bildauswahl sind freigegeben. Franz Schrader ist nur stiller Gesellschafter und wurde aus dem Dentalbereich entfernt.
+**Nächster Schritt:** Kundin liest die Texte in Ruhe und meldet sich. Danach Unterseiten für die Auffindbarkeit bauen, jede vorab zur Freigabe.
 **Ziel:** Zwei Markenbereiche unter einer Auswahl-Startseite, fehlerfrei, Datenschutz nachgewiesen. Zieldatum noch offen.
 
 ## Ausgangslage
@@ -44,6 +44,7 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | Impressum: Registergericht, USt-IdNr., Telefonnummer Elster fehlen | Livegang | Kundin | 14.09.2026 |
 | Domain nicht entschieden: eine Domain für beide Marken oder zwei | canonical, Sitemap, Struktur | Ovidiu mit Kundin | 14.09.2026 |
 | Fachliche Freigabe der Leistungstexte fehlt (Haftungsthema) | Stufe 3 abschließen | Kundin | 14.09.2026 |
+| Impressum und Fußzeile nennen Franz Schrader als Geschäftsführung, laut Kundin ist er nur stiller Gesellschafter | Livegang | Ovidiu mit Kundin, Blick ins Handelsregister | 18.09.2026 |
 
 ## Was der Kunde noch liefern muss
 
@@ -57,6 +58,7 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | Telefonnummer Elster Dental Consulting GmbH | offen | fehlt |
 | Hoster-Angaben und Auftragsverarbeitungsvertrag | offen | fehlt |
 | Beleg für die Aussage „über 10 Jahre Erfahrung“ | offen | fehlt, Aussage bis dahin nicht auf der Seite |
+| Foto aus einer Zahnarztpraxis mit einer Zahnärztin, für den Dentalbereich | 21.09.2026 | zugesagt im Call vom 18.09.2026 |
 
 ## Session-Historie
 
@@ -66,3 +68,4 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | 14.09.2026 | Echte Logos (.ai, PDF-basiert) nach SVG gewandelt, je Untergrund eingefärbt, Favicons aus dem Signet gebaut. Sieben Fotos von Isabel Gohl aufbereitet, sechs davon eingesetzt, jedes Motiv nur einmal je Seite. Auswahl-Startseite umgebaut: Verlauf jetzt waagerecht, Logo und Nummer oben, Gesicht rechts. Vorschaufassung `vorschau-gohl-elster.html` erzeugt, alles eingebettet, laeuft per Doppelklick ohne Server. Alte Platzhalterbilder liegen in `img/_alt-platzhalter/` und koennen geloescht werden. |
 | 14.09.2026 | Zweiter Geschäftsführer Franz Schrader aufgenommen, Über uns als zwei gleichwertige Karten, Texte in die Wir-Form, beide als `founder` im JSON-LD. Portraitzuschnitte nachgemessen und mittig gesetzt. Icons zentriert und in einheitlicher Größe, Ursache war eine zu breit gefasste CSS-Regel. Barrierefreiheits-Knopf auf der dunklen Seite umgefärbt, Kontrast gemessen. Gleichstellungshinweis je Marke als eigene Seite, aus jeder Fußzeile verlinkt. Fußzeile mit Copyright und Signatur „Made by AO Consulting" auf allen neun Seiten. |
 | 15.09.2026 | Logos auf Auswahlseite und im Kopfbereich vergrößert, fehlende Handy-Regel für das Gohl-Logo ergänzt. Fuß der Auswahlseite zweispaltig neu gebaut, je Firma vollständige Kontakt- und Rechtsangaben, Trennstriche auf gemessen gleicher Höhe. Ortsangabe bei den beiden Geschäftsführenden durch „Schwerpunkt Beratung Zahnmedizin" ersetzt. Trefferfläche der Menüpunkte auf 44 px. Telefon im Kontaktformular auf Kundenwunsch Pflichtfeld, Vorbehalt zur Datenminimierung in der LIESMICH festgehalten. Hinweisband aus der Vorschaudatei und aus dem Bauskript entfernt. LIESMICH auf Version 0.7. |
+| 18.09.2026 | Videocall mit Isabel Gohl, Vorschau gemeinsam durchgegangen. Rückmeldung: Farben, Gestaltung und Bildauswahl gefallen, Texte liest sie in Ruhe nach. Franz Schrader ist nur stiller Gesellschafter und nicht in der Geschäftsführung tätig. Sein Abschnitt im Dentalbereich wurde deshalb komplett entfernt: Kopfkarte mit Foto, Nennung im Über-uns-Text und Eintrag als `founder` im JSON-LD. Überschrift und Einleitung auf eine Person umgeschrieben, neue CSS-Regel `.koepfe--einzeln` für die einzelne mittige Karte. Impressum und Fußzeile bleiben vorerst unverändert, die Rolle im Handelsregister ist noch zu klären. Die Kundin schickt am Montag ein Foto aus einer Zahnarztpraxis. |

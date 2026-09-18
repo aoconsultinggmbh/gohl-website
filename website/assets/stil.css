@@ -512,6 +512,8 @@ html[data-marke="elster"] .person__bild img{box-shadow:var(--schatten-stark)}
 }
 
 .koepfe{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,3vw,40px)}
+/* Nur eine verantwortliche Person: eine Karte, mittig, nicht ueber die ganze Breite. */
+.koepfe--einzeln{grid-template-columns:minmax(0,560px);justify-content:center}
 .kopfkarte{
   display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,2.4vw,30px);
   align-items:center;padding:clamp(18px,2vw,26px);
