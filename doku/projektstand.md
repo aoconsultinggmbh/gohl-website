@@ -3,7 +3,7 @@ titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Con
 kategorie: Steuerung
 kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
 stand: 21.09.2026
-version: 1.4
+version: 1.5
 ---
 
 # Projektstand — Gohl Consulting und Elster Dental Consulting
@@ -41,10 +41,10 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 |---|---|---|---|
 | ~~Logos und Bilder fehlen~~ **erledigt am 14.09.2026.** Logos als .ai geliefert und verlustfrei nach SVG gewandelt, sieben Fotos von Isabel Gohl eingesetzt. Originale liegen in `04_.../input/vorlagen/` | | | |
 | Beide Datenschutzerklärungen waren auf der Altseite leer | Stufe 6 und Livegang | Kundin, mit Hoster-Angaben | 14.09.2026 |
-| Impressum Elster: Registergericht und USt-IdNr. fehlen. Telefonnummer am 21.09.2026 nachgetragen, es ist dieselbe wie bei Gohl Consulting | Livegang | Kundin | 14.09.2026 |
+| Impressum Elster: USt-IdNr. fehlt noch. Telefonnummer, Registergericht und Registernummer am 21.09.2026 nachgetragen | Livegang | Kundin | 14.09.2026 |
 | Domain nicht entschieden: eine Domain für beide Marken oder zwei | canonical, Sitemap, Struktur | Ovidiu mit Kundin | 14.09.2026 |
 | Fachliche Freigabe der Leistungstexte fehlt (Haftungsthema) | Stufe 3 abschließen | Kundin | 14.09.2026 |
-| Impressum und Fußzeile nennen Franz Schrader als Geschäftsführung, laut Kundin ist er nur stiller Gesellschafter | Livegang | Ovidiu mit Kundin, Blick ins Handelsregister | 18.09.2026 |
+| ~~Impressum und Fußzeile nennen Franz Schrader als Geschäftsführung~~ **erledigt am 21.09.2026.** Handelsregister geprüft: Amtsgericht Cottbus HRB 19646, alleinige Geschäftsführerin ist Isabel Käthe Gohl. Ein stiller Gesellschafter gehört nach § 5 DDG nicht ins Impressum, er ist nicht vertretungsberechtigt. Name überall entfernt | | | |
 
 ## Was der Kunde noch liefern muss
 
@@ -54,7 +54,8 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | ~~Logo Gohl Consulting~~ | 14.09.2026 | ✅ geliefert |
 | ~~Fotos Isabel Gohl~~ | 14.09.2026 | ✅ sieben Motive geliefert |
 | Schriftliche Bildeinwilligung für alle Personenbilder | offen | fehlt |
-| Registergericht, Registernummer, USt-IdNr. beider Firmen | offen | fehlt |
+| Registergericht und Registernummer Elster Dental | 21.09.2026 | ✅ aus dem Handelsregister: Amtsgericht Cottbus, HRB 19646, bitte gegen den Auszug prüfen lassen |
+| USt-IdNr. Elster Dental und Gohl Consulting | offen | fehlt, bei Isabel angefragt |
 | ~~Telefonnummer Elster Dental Consulting GmbH~~ | 21.09.2026 | ✅ dieselbe Nummer wie Gohl Consulting, 0172 3945278 |
 | Hoster-Angaben und Auftragsverarbeitungsvertrag | offen | fehlt |
 | Beleg für die Aussage „über 10 Jahre Erfahrung“ | offen | fehlt, Aussage bis dahin nicht auf der Seite |
@@ -74,3 +75,4 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | 21.09.2026 | Schriftliche Rückmeldung der Kundin eingearbeitet. Erstens: Das Beratungsgebiet war überall auf Brandenburg verengt, richtig ist „Berlin, Brandenburg und Umgebung". Brandenburg bleibt als Schwerpunkt erhalten, weil die Kundin aus der Region kommt und der Unterversorgung dort entgegenwirken will. Geändert an 32 Textstellen plus Seitentitel, Vorschautexte für soziale Netzwerke, `areaServed` im JSON-LD, Vertrauensband, beide FAQ-Antworten zur Region und die Ortsliste in allen acht Fußzeilen. Sechs Bilddateien von `...-brandenburg-...` auf `...-berlin-brandenburg-...` umbenannt. Zweitens: Die beiden Bilddateien von Franz Schrader sind aus dem Projekt gelöscht, seine Einbindung war mit ihm nicht abgesprochen. Hinweis: Die Seitentitel sind durch die lange Regionsangabe 74 bis 78 Zeichen lang, Google zeigt rund 60 davon. |
 | 21.09.2026 | Beim Prüfen aufgefallen: Auf der Startseiten-Kachel „Zahnmedizin“ und im Kopfbereich der Elster-Seite war derselbe Mann zu sehen wie auf dem gelöschten Portrait von Franz Schrader, gleiches Fotoshooting. Beide Bilder sind ebenfalls gelöscht. An beiden Stellen steht jetzt übergangsweise das bisher ungenutzte Hochformat-Portrait von Isabel Gohl. Der Kopfbereich der Elster-Seite behält dafür auch unter 1180 px das Format 4:5, ein 16:11-Kasten hätte den Kopf abgeschnitten. Die Vorschaubilder für soziale Netzwerke zeigen jetzt Isabel Gohl am Arbeitsplatz. Ein eigenes Motiv für den Dentalbereich fehlt weiterhin. Zusätzlich `geo.region` um DE-BE ergänzt. |
 | 21.09.2026 | Telefonnummer der Elster Dental Consulting GmbH nachgetragen. Sie ist dieselbe wie bei Gohl Consulting: 0172 3945278. Eingesetzt im Kontaktbereich der Elster-Seite, in der Fußzeile der Startseite, in Impressum und Datenschutz, in den Fußzeilen aller vier Elster-Seiten, in der FAQ-Antwort zur Region und als `telephone` im JSON-LD von Startseite und Elster-Seite. Damit sind die gelben Lücken zur Telefonnummer weg.
+| 21.09.2026 | Handelsregister geprüft (Amtsgericht Cottbus, HRB 19646, Eintragung 11.05.2026, Stammkapital 25.000 Euro): Isabel Käthe Gohl ist alleinige Geschäftsführerin. Franz Schrader ist nicht eingetragen. Ein stiller Gesellschafter nach §§ 230 ff. HGB ist eine reine Innenbeteiligung, steht nicht im Register, vertritt die Gesellschaft nicht und gehört deshalb nicht ins Impressum. Sein Name ist aus dem Impressum und aus der Fußzeile der Startseite entfernt, Registergericht und Registernummer sind eingetragen. Damit kommt er auf der ganzen Seite nicht mehr vor. Offen bleibt die USt-IdNr. |
