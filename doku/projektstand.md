@@ -2,14 +2,14 @@
 titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Consulting
 kategorie: Steuerung
 kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
-stand: 18.09.2026
-version: 1.2
+stand: 21.09.2026
+version: 1.3
 ---
 
 # Projektstand — Gohl Consulting und Elster Dental Consulting
 
-**Letzte Session:** 18.09.2026. Vorstellung der Vorschau bei der Kundin per Videocall. Design, Farben und Bildauswahl sind freigegeben. Franz Schrader ist nur stiller Gesellschafter und wurde aus dem Dentalbereich entfernt.
-**Nächster Schritt:** Kundin liest die Texte in Ruhe und meldet sich. Danach Unterseiten für die Auffindbarkeit bauen, jede vorab zur Freigabe.
+**Letzte Session:** 21.09.2026. Erste schriftliche Rückmeldung der Kundin eingearbeitet: Das Beratungsgebiet heißt jetzt überall „Berlin, Brandenburg und Umgebung". Die Bilder von Franz Schrader sind aus dem Projekt gelöscht.
+**Nächster Schritt:** Die Kundin arbeitet die Seite bis Mittwoch, 23.09.2026, vollständig durch und schickt eine Aufschlüsselung aller Änderungswünsche. Bis dahin keine weiteren Textarbeiten.
 **Ziel:** Zwei Markenbereiche unter einer Auswahl-Startseite, fehlerfrei, Datenschutz nachgewiesen. Zieldatum noch offen.
 
 ## Ausgangslage
@@ -59,6 +59,7 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | Hoster-Angaben und Auftragsverarbeitungsvertrag | offen | fehlt |
 | Beleg für die Aussage „über 10 Jahre Erfahrung“ | offen | fehlt, Aussage bis dahin nicht auf der Seite |
 | Foto aus einer Zahnarztpraxis mit einer Zahnärztin, für den Dentalbereich | 21.09.2026 | zugesagt im Call vom 18.09.2026 |
+| Vollständige Aufschlüsselung der Textänderungen | 23.09.2026 | zugesagt per E-Mail am 21.09.2026 |
 
 ## Session-Historie
 
@@ -69,3 +70,4 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | 14.09.2026 | Zweiter Geschäftsführer Franz Schrader aufgenommen, Über uns als zwei gleichwertige Karten, Texte in die Wir-Form, beide als `founder` im JSON-LD. Portraitzuschnitte nachgemessen und mittig gesetzt. Icons zentriert und in einheitlicher Größe, Ursache war eine zu breit gefasste CSS-Regel. Barrierefreiheits-Knopf auf der dunklen Seite umgefärbt, Kontrast gemessen. Gleichstellungshinweis je Marke als eigene Seite, aus jeder Fußzeile verlinkt. Fußzeile mit Copyright und Signatur „Made by AO Consulting" auf allen neun Seiten. |
 | 15.09.2026 | Logos auf Auswahlseite und im Kopfbereich vergrößert, fehlende Handy-Regel für das Gohl-Logo ergänzt. Fuß der Auswahlseite zweispaltig neu gebaut, je Firma vollständige Kontakt- und Rechtsangaben, Trennstriche auf gemessen gleicher Höhe. Ortsangabe bei den beiden Geschäftsführenden durch „Schwerpunkt Beratung Zahnmedizin" ersetzt. Trefferfläche der Menüpunkte auf 44 px. Telefon im Kontaktformular auf Kundenwunsch Pflichtfeld, Vorbehalt zur Datenminimierung in der LIESMICH festgehalten. Hinweisband aus der Vorschaudatei und aus dem Bauskript entfernt. LIESMICH auf Version 0.7. |
 | 18.09.2026 | Videocall mit Isabel Gohl, Vorschau gemeinsam durchgegangen. Rückmeldung: Farben, Gestaltung und Bildauswahl gefallen, Texte liest sie in Ruhe nach. Franz Schrader ist nur stiller Gesellschafter und nicht in der Geschäftsführung tätig. Sein Abschnitt im Dentalbereich wurde deshalb komplett entfernt: Kopfkarte mit Foto, Nennung im Über-uns-Text und Eintrag als `founder` im JSON-LD. Überschrift und Einleitung auf eine Person umgeschrieben, neue CSS-Regel `.koepfe--einzeln` für die einzelne mittige Karte. Impressum und Fußzeile bleiben vorerst unverändert, die Rolle im Handelsregister ist noch zu klären. Die Kundin schickt am Montag ein Foto aus einer Zahnarztpraxis. |
+| 21.09.2026 | Schriftliche Rückmeldung der Kundin eingearbeitet. Erstens: Das Beratungsgebiet war überall auf Brandenburg verengt, richtig ist „Berlin, Brandenburg und Umgebung". Brandenburg bleibt als Schwerpunkt erhalten, weil die Kundin aus der Region kommt und der Unterversorgung dort entgegenwirken will. Geändert an 32 Textstellen plus Seitentitel, Vorschautexte für soziale Netzwerke, `areaServed` im JSON-LD, Vertrauensband, beide FAQ-Antworten zur Region und die Ortsliste in allen acht Fußzeilen. Sechs Bilddateien von `...-brandenburg-...` auf `...-berlin-brandenburg-...` umbenannt. Zweitens: Die beiden Bilddateien von Franz Schrader sind aus dem Projekt gelöscht, seine Einbindung war mit ihm nicht abgesprochen. Hinweis: Die Seitentitel sind durch die lange Regionsangabe 74 bis 78 Zeichen lang, Google zeigt rund 60 davon. |
