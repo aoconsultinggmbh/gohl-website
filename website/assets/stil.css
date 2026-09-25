@@ -523,6 +523,12 @@ html[data-marke="elster"] .karte:hover{box-shadow:var(--schatten-stark)}
 
 /* Gruenderin */
 .person{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,72px);align-items:center}
+/* Ohne Portrait steht der Text allein. Eine Spalte, begrenzte Zeilenlaenge,
+   damit die Zeilen auf breiten Bildschirmen nicht auseinanderlaufen. */
+.person--ohne-bild{grid-template-columns:1fr;max-width:74ch;margin-inline:auto;text-align:center}
+.person--ohne-bild blockquote{margin-inline:auto}
+.person--ohne-bild .person__wer{display:inline-block;padding-inline:clamp(18px,3vw,40px)}
+.person--ohne-bild .btn-reihe{justify-content:center}
 .person__bild img{
   width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 26%;
   border-radius:var(--radius-gross);box-shadow:var(--schatten);
