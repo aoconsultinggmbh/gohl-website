@@ -3,7 +3,7 @@ titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Con
 kategorie: Steuerung
 kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
 stand: 25.09.2026
-version: 1.7
+version: 1.8
 ---
 
 # Projektstand — Gohl Consulting und Elster Dental Consulting
@@ -62,7 +62,8 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | Beleg für die Aussage „über 10 Jahre Erfahrung“ | offen | fehlt, Aussage bis dahin nicht auf der Seite |
 | Foto aus einer Zahnarztpraxis mit einer Zahnärztin, für den Dentalbereich | 21.09.2026 | zugesagt im Call vom 18.09.2026 |
 | Vollständige Aufschlüsselung der Textänderungen | 23.09.2026 | zugesagt per E-Mail am 21.09.2026 |
-| Eigenes Bildmotiv für den Dentalbereich, Startseiten-Kachel und Kopfbereich | offen | Isabel Gohl zeigt zurzeit beide Bereiche |
+| ~~Eigenes Bildmotiv für den Dentalbereich~~ | 25.09.2026 | ✅ zwei Fotos aus einer Zahnarztpraxis geliefert und eingesetzt |
+| Schriftliche Bildeinwilligung aller Personen auf den Praxisfotos, dazu Zustimmung der abgebildeten Praxis (Praxisschild sichtbar) | offen | vor dem Livegang nötig |
 | Schriftliche Erlaubnis der sechs Partner zur Nennung von Name und Logo | offen | vor dem Livegang nötig |
 
 ## Session-Historie
@@ -80,3 +81,4 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | 21.09.2026 | Handelsregister geprüft (Amtsgericht Cottbus, HRB 19646, Eintragung 11.05.2026, Stammkapital 25.000 Euro): Isabel Käthe Gohl ist alleinige Geschäftsführerin. Franz Schrader ist nicht eingetragen. Ein stiller Gesellschafter nach §§ 230 ff. HGB ist eine reine Innenbeteiligung, steht nicht im Register, vertritt die Gesellschaft nicht und gehört deshalb nicht ins Impressum. Sein Name ist aus dem Impressum und aus der Fußzeile der Startseite entfernt, Registergericht und Registernummer sind eingetragen. Damit kommt er auf der ganzen Seite nicht mehr vor. Offen bleibt die USt-IdNr. |
 | 25.09.2026 | Zweite Rückmeldungsrunde eingearbeitet. Allgemeinmedizin: MVZ-Gründung neu getextet, Koordination ab dem ersten Tag, vom Umbau bis zur Neuplanung. Zahnmedizin: Leistung 01 heißt jetzt „Praxisverkauf und Praxisübernahme" und deckt beide Richtungen ab, die Abtretung von Praxisanteilen bleibt als eigener Punkt. Neuer Abschnitt „Praxisauflösung" mit dem Hinweiskasten „Wann Handlungsbedarf besteht" auf beiden Markenseiten, neue CSS-Bausteine `.hinweis` und `.partner`. Neuer Abschnitt „Partnernetzwerk" über der Kontaktfläche, ebenfalls auf beiden Seiten, mit sechs Logos: Doctolib, Nobel Biocare, bfs health finance, STUSCHE, Schrader Beratung, GRAF MedTalent UG. Logos aufbereitet als WebP mit PNG-Rückfall, beim GRAF-Logo war das Transparenzmuster ins JPEG eingebrannt und wurde herausgerechnet, das bfs-Logo stammt aus der gelieferten PDF. Doctolib erscheint mit dem reinen Logo, das Partner-Abzeichen mit dem Rabatt von 50 Prozent für drei Monate wurde bewusst weggelassen, weil eine auslaufende Aktion sonst falsch auf der Seite stünde. Originale der Logos liegen auf dem Mac unter „Claude outputs/partnerlogos-gohl". |
 | 25.09.2026 | Auf Wunsch der Kundin das Portrait im Abschnitt „Über uns" der Allgemeinmedizin-Seite entfernt (Aufnahme am Baum). Der Abschnitt steht jetzt einspaltig und mittig, neue Regel `.person--ohne-bild`. Die Bilddatei `isabel-gohl-gruenderin-gohl-consulting` bleibt im Projekt, wird aber nirgends mehr eingebunden. |
+| 25.09.2026 | Zwei Fotos aus einer Zahnarztpraxis eingesetzt. Behandlungszimmer (drei Personen) im Kopfbereich der Elster-Seite, Empfang mit Handschlag in der Startseiten-Kachel „Zahnmedizin“. Dazu ein eigenes Vorschaubild 1200 × 630 für soziale Netzwerke. Bildbeschreibungen neutral ohne Namen, bis die Zuordnung der Personen bestätigt ist. Metadaten entfernt. Das Übergangsportrait von Isabel Gohl wird nicht mehr eingebunden, die Datei bleibt im Projekt. Damit zeigt die Startseite nicht mehr zweimal dieselbe Person. |
