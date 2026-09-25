@@ -463,6 +463,9 @@ html[data-marke="elster"] .hero__medien img{box-shadow:var(--schatten-stark);obj
   transition:filter .28s var(--takt),opacity .28s var(--takt);
 }
 .partner__feld:hover img{filter:none;opacity:1}
+/* Logos im Hochformat oder mit zwei Textzeilen brauchen mehr Hoehe,
+   sonst ist die Unterzeile nicht mehr zu lesen. */
+.partner__feld--hoch img{max-height:84px}
 
 /* Hinweiskasten, zurzeit fuer die Praxisaufloesung. */
 .hinweis{
