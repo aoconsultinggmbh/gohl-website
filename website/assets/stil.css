@@ -444,6 +444,38 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
 }
 html[data-marke="elster"] .hero__medien img{box-shadow:var(--schatten-stark);object-position:50% 18%}
 
+/* Partnernetzwerk. Die Logos liegen auf weissen Feldern, damit sie auf der
+   dunklen Elster-Seite genauso sauber stehen wie auf der hellen Gohl-Seite. */
+.partner{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,22px);
+}
+.partner__feld{
+  display:grid;place-items:center;min-height:104px;
+  padding:clamp(18px,2.2vw,28px);
+  background:#fff;border:1px solid var(--linie);border-radius:var(--radius-gross);
+  transition:border-color .28s var(--takt),box-shadow .28s var(--takt);
+}
+.partner__feld:hover{border-color:var(--akzent);box-shadow:var(--schatten)}
+.partner__feld img{
+  display:block;width:auto;max-width:100%;height:auto;max-height:48px;
+  filter:grayscale(1);opacity:.8;
+  transition:filter .28s var(--takt),opacity .28s var(--takt);
+}
+.partner__feld:hover img{filter:none;opacity:1}
+
+/* Hinweiskasten, zurzeit fuer die Praxisaufloesung. */
+.hinweis{
+  max-width:68ch;margin:0 auto;padding:clamp(22px,3vw,38px);
+  background:var(--grund-2);border:1px solid var(--akzent);border-radius:var(--radius-gross);
+}
+.hinweis h3{
+  margin:0 0 12px;color:var(--auf-grund);
+  font-size:clamp(1.12rem,1rem + .5vw,1.4rem);font-weight:600;letter-spacing:-.01em;
+}
+.hinweis p{margin:0}
+.hinweis .btn-reihe{margin-top:26px}
+
 /* Vertrauensband */
 .band{border-top:1px solid var(--linie);border-bottom:1px solid var(--linie);background:var(--grund-2)}
 .band__raster{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linie)}
@@ -743,9 +775,11 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
   .wahl{min-height:400px}
   .band__raster{grid-template-columns:1fr}
   .leistungen{grid-template-columns:1fr}
+  .partner{grid-template-columns:repeat(2,1fr)}
 }
 
 @media (max-width:600px){
+  .partner{grid-template-columns:1fr}
   .start__fuss__raster{grid-template-columns:1fr}
   .kopfkarte{grid-template-columns:1fr;text-align:left}
   .kopfkarte img{width:100%;max-width:220px;aspect-ratio:4/3}
