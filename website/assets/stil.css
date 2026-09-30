@@ -818,7 +818,25 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
 @media (max-width:860px){
   .koepfe{grid-template-columns:1fr}
   .start__wahl{grid-template-columns:1fr}
-  .wahl{min-height:400px}
+  /* Handy: Foto oben, Text darunter auf eigener Flaeche. Ueberlagerung von
+     Schrift und Gesicht faellt damit weg (Rueckmeldung Frau Gohl). */
+  .wahl{min-height:0;padding:0;display:block}
+  .wahl::before{display:none}
+  .wahl__bild{position:relative;inset:auto;z-index:0;aspect-ratio:4/3;overflow:hidden}
+  .wahl__bild picture,.wahl__bild img{display:block;height:100%;width:100%}
+  .wahl__bild img{object-position:50% 20%}
+  .wahl--gohl .wahl__bild img{object-position:50% 12% !important}
+  .wahl--elster .wahl__bild img{object-position:60% 50% !important}
+  .wahl__kopf{position:absolute;top:18px;left:18px;gap:14px}
+  .wahl{position:relative}
+  .wahl__inhalt{padding:22px 22px 28px;max-width:none}
+  .wahl--elster .wahl__inhalt{background:#1A1A1A}
+  .wahl--gohl .wahl__inhalt{background:var(--creme)}
+  .wahl--gohl .wahl__kopf .wahl__nr{color:var(--gold)}
+  /* Logo oben links auf dem Foto: leichte dunkle Kante fuer Lesbarkeit */
+  .wahl__kopf{padding:8px 12px;border-radius:12px;background:rgba(26,26,26,.28);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  .wahl--gohl .wahl__kopf{background:rgba(250,248,245,.72)}
+  .wahl--gohl .wahl__kopf .wahl__nr{color:var(--gold-mittel)}
   .band__raster{grid-template-columns:1fr}
   .leistungen{grid-template-columns:1fr}
   .partner{grid-template-columns:repeat(2,1fr)}
