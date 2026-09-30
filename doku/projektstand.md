@@ -3,7 +3,7 @@ titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Con
 kategorie: Steuerung
 kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
 stand: 30.09.2026
-version: 1.9
+version: 1.10
 ---
 
 # Projektstand — Gohl Consulting und Elster Dental Consulting
@@ -83,3 +83,4 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | 25.09.2026 | Auf Wunsch der Kundin das Portrait im Abschnitt „Über uns" der Allgemeinmedizin-Seite entfernt (Aufnahme am Baum). Der Abschnitt steht jetzt einspaltig und mittig, neue Regel `.person--ohne-bild`. Die Bilddatei `isabel-gohl-gruenderin-gohl-consulting` bleibt im Projekt, wird aber nirgends mehr eingebunden. |
 | 25.09.2026 | Zwei Fotos aus einer Zahnarztpraxis eingesetzt. Behandlungszimmer (drei Personen) im Kopfbereich der Elster-Seite, Empfang mit Handschlag in der Startseiten-Kachel „Zahnmedizin“. Dazu ein eigenes Vorschaubild 1200 × 630 für soziale Netzwerke. Bildbeschreibungen neutral ohne Namen, bis die Zuordnung der Personen bestätigt ist. Metadaten entfernt. Das Übergangsportrait von Isabel Gohl wird nicht mehr eingebunden, die Datei bleibt im Projekt. Damit zeigt die Startseite nicht mehr zweimal dieselbe Person. |
 | 30.09.2026 | Auf Kundenwunsch die FAQ „Was passiert im Nachbesetzungsverfahren?" von der Allgemeinmedizin-Seite entfernt, sichtbar und im FAQPage-Markup. Beide zählen jetzt fünf Fragen. Die Erwähnung im Leistungstext Praxisabgabe und das Stichwort in `knowsAbout` bleiben. |
+| 30.09.2026 | Auf Kundenwunsch das Thema Nachbesetzungsverfahren vollständig entfernt. Leistungstext Praxisabgabe neu: „Bewertung, Nachfolgersuche und Übergabe Ihrer Praxis, vom ersten Gespräch bis zum Abschluss aus einer Hand." Stichwort aus `knowsAbout` gestrichen. Der Begriff kommt auf keiner Seite mehr vor. |
