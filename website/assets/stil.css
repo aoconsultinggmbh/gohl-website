@@ -569,6 +569,17 @@ html[data-marke="elster"] .karte:hover{box-shadow:var(--schatten-stark)}
   .kopfkarte{background:rgba(250,248,245,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
   html[data-marke="elster"] .kopfkarte{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.10)}
 }
+/* Lichtstreif beim Darueberfahren, wie bei den Kontaktkarten der Startseite */
+.karte{overflow:hidden}
+.karte::after{
+  content:"";position:absolute;top:-20%;bottom:-20%;left:-40%;width:35%;
+  background:linear-gradient(105deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.30) 45%, rgba(201,169,97,.16) 55%, rgba(255,255,255,0) 100%);
+  transform:translateX(-120%) skewX(-14deg);pointer-events:none;opacity:0;
+}
+html[data-marke="elster"] .karte::after{background:linear-gradient(105deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.12) 45%, rgba(201,169,97,.14) 55%, rgba(255,255,255,0) 100%)}
+.karte:hover::after{animation:glanz .9s var(--takt) forwards}
+@media (prefers-reduced-motion:reduce){.karte:hover::after{animation:none}}
+
 /* Weiche Farbflecken hinter den Leistungen, damit das Glas etwas zu verwischen hat */
 #leistungen{position:relative;isolation:isolate}
 #leistungen::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
