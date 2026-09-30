@@ -488,7 +488,7 @@ html[data-marke="elster"] .hero__raster{align-items:center}
    oben klar. Bindet das Foto an den dunklen Grund, Gesichter bleiben frei. */
 html[data-marke="elster"] .hero__medien::after{
   content:"";position:absolute;inset:0;border-radius:var(--radius-gross);pointer-events:none;
-  background:linear-gradient(180deg,rgba(26,26,26,.10) 0%,rgba(26,26,26,.05) 40%,rgba(26,26,26,.55) 100%);
+  background:linear-gradient(180deg,rgba(26,26,26,.30) 0%,rgba(26,26,26,.22) 45%,rgba(26,26,26,.72) 100%);
 }
 
 /* Partnernetzwerk. Die Logos liegen auf weissen Feldern, damit sie auf der
@@ -557,10 +557,26 @@ html[data-marke="elster"] .hero__medien::after{
   position:relative;padding:clamp(26px,3vw,40px);
   border:1px solid var(--linie);border-radius:var(--radius-gross);
   background:var(--grund);
+  /* dezente Glasoptik: leicht durchscheinend, feiner Lichtrand oben */
+  box-shadow:0 1px 0 rgba(255,255,255,.06) inset;
   transition:transform .28s var(--takt),border-color .28s var(--takt),box-shadow .28s var(--takt);
 }
 .karte:hover{transform:translateY(-4px);border-color:var(--akzent);box-shadow:var(--schatten)}
 html[data-marke="elster"] .karte:hover{box-shadow:var(--schatten-stark)}
+@supports (backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px)){
+  .karte{background:rgba(250,248,245,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:rgba(255,255,255,.7)}
+  html[data-marke="elster"] .karte{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.10);box-shadow:0 1px 0 rgba(255,255,255,.08) inset}
+  .kopfkarte{background:rgba(250,248,245,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+  html[data-marke="elster"] .kopfkarte{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.10)}
+}
+/* Weiche Farbflecken hinter den Leistungen, damit das Glas etwas zu verwischen hat */
+#leistungen{position:relative;isolation:isolate}
+#leistungen::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(45% 55% at 20% 35%, rgba(201,169,97,.16), transparent 70%),
+             radial-gradient(40% 50% at 82% 70%, rgba(201,169,97,.10), transparent 70%)}
+html[data-marke="gohl"] #leistungen::before{
+  background:radial-gradient(45% 55% at 20% 35%, rgba(201,169,97,.18), transparent 70%),
+             radial-gradient(40% 50% at 82% 70%, rgba(26,26,26,.07), transparent 70%)}
 .karte__ico{
   width:56px;height:56px;display:grid;place-items:center;margin-bottom:22px;
   border-radius:15px;background:color-mix(in srgb,var(--akzent) 15%,transparent);
