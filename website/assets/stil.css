@@ -264,6 +264,8 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
 .nav__liste a[aria-current="page"]::after{right:0}
 
 .nav__cta{flex:none}
+.nav__liste-cta{display:none}
+@media (max-width:1240px){.kopf[data-menue="offen"] .nav__liste-cta{display:block}}
 
 /* Umschalter zur Schwestermarke */
 .nav__wechsel{
@@ -877,7 +879,12 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
   }
   .kopf[data-menue="offen"] .nav__liste a{display:block;padding:13px 4px;font-size:1.02rem}
   .kopf[data-menue="offen"] .nav__liste a::after{display:none}
-  .kopf[data-menue="offen"] .nav__cta{display:inline-flex;width:100%;margin-top:10px}
+  /* Der Knopf in der Kopfzeile bleibt am Handy versteckt (er wuerde rechts aus
+     dem Bild laufen); stattdessen steht er als letzter Punkt im Klappmenue. */
+  .kopf[data-menue="offen"] .nav__cta{display:none}
+  .kopf[data-menue="offen"] .nav__liste-cta{margin-top:10px}
+  .kopf[data-menue="offen"] .nav__liste-cta a{display:inline-flex;width:100%;justify-content:center;padding:14px 20px}
+  .kopf[data-menue="offen"] .nav__liste-cta a::after{display:none}
 }
 
 @media (max-width:1024px){
