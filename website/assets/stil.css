@@ -828,9 +828,9 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
   .wahl--gohl .wahl__bild img{object-position:50% 12% !important}
   .wahl--elster .wahl__bild img{object-position:60% 50% !important}
   .wahl__kopf{position:absolute;top:14px;left:14px;gap:10px}
-  .wahl__kopf .wahl__logo{height:40px}
-  .wahl--gohl .wahl__kopf .wahl__logo{height:50px}
-  .wahl__kopf .wahl__nr{font-size:1.6rem}
+  .wahl__kopf .wahl__nr{display:none}
+  .wahl__kopf .wahl__logo{height:34px}
+  .wahl--gohl .wahl__kopf .wahl__logo{height:42px}
   /* leichter Schleier oben auf dem Foto, damit Logo und Nummer ruhig sitzen */
   .wahl__bild::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:linear-gradient(180deg,rgba(26,26,26,.28) 0%,rgba(26,26,26,0) 45%)}
