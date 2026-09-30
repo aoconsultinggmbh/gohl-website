@@ -481,11 +481,16 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
 }
 html[data-marke="elster"] .hero__medien img{box-shadow:var(--schatten-stark);object-position:50% 6%;aspect-ratio:4/3}
 /* Elster-Kopfzeile: kuerzer und breiter, damit der Titel in zwei Zeilen steht */
-html[data-marke="elster"] .hero__text{max-width:46ch}
+.hero__text{max-width:46ch}
 html[data-marke="elster"] .hero h1{font-size:clamp(2.2rem,1.4rem + 3.2vw,3.6rem)}
 html[data-marke="elster"] .hero__raster{align-items:center}
 /* Schleier ueber dem Kopfbild (Elster): unten dunkler Anthrazit-Verlauf,
    oben klar. Bindet das Foto an den dunklen Grund, Gesichter bleiben frei. */
+/* Gohl: leichter cremefarbener Schleier von unten, bindet das Foto an den hellen Grund */
+html[data-marke="gohl"] .hero__medien::after{
+  content:"";position:absolute;inset:0;border-radius:var(--radius-gross);pointer-events:none;
+  background:linear-gradient(180deg,rgba(250,248,245,.10) 0%,rgba(250,248,245,.06) 50%,rgba(250,248,245,.45) 100%);
+}
 html[data-marke="elster"] .hero__medien::after{
   content:"";position:absolute;inset:0;border-radius:var(--radius-gross);pointer-events:none;
   background:linear-gradient(180deg,rgba(26,26,26,.30) 0%,rgba(26,26,26,.22) 45%,rgba(26,26,26,.72) 100%);
