@@ -551,7 +551,7 @@ html[data-marke="elster"] .hero__medien::after{
 .karte--breit{grid-column:1 / -1;display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-items:start}
 .karte--breit .karte__ico{grid-row:1 / span 2}
 .karte--breit h3{grid-column:2}
-.karte--breit p{grid-column:2;max-width:70ch}
+.karte--breit p{grid-column:2;max-width:none}
 @media (max-width:860px){.karte--breit{display:block}}
 .karte{
   position:relative;padding:clamp(26px,3vw,40px);
@@ -842,7 +842,7 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
   .hero__medien img{aspect-ratio:16/11}
   /* Elster: die Vorlage ist Hochformat, deshalb bleibt der Kasten Hochformat.
      Ein 16:11-Kasten wuerde hier den Kopf abschneiden. */
-  html[data-marke="elster"] .hero__medien img{aspect-ratio:4/5}
+  html[data-marke="elster"] .hero__medien img{aspect-ratio:4/3;object-position:50% 6%}   /* auch am Handy ohne Beine */
   .fuss__raster{grid-template-columns:1fr 1fr}
   .fuss__raster > :first-child{grid-column:1 / -1}
 }
