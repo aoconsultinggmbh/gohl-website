@@ -404,7 +404,21 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
   .fussmarke{background:rgba(250,248,245,.55);-webkit-backdrop-filter:blur(16px) saturate(1.15);backdrop-filter:blur(16px) saturate(1.15)}
 }
 .fussmarke:hover{transform:translateY(-3px);box-shadow:0 1px 0 rgba(255,255,255,.9) inset, 0 20px 50px rgba(26,26,26,.10)}
-@media (prefers-reduced-motion:reduce){.fussmarke:hover{transform:none}}
+/* Lichtstreif: beim Darueberfahren wandert ein schmaler, schraeger Glanz
+   einmal von links nach rechts ueber die Karte. Dezent, 0,9 Sekunden. */
+.fussmarke{overflow:hidden}
+.fussmarke::after{
+  content:"";position:absolute;top:-20%;bottom:-20%;left:-40%;width:35%;
+  background:linear-gradient(105deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.38) 45%, rgba(201,169,97,.18) 55%, rgba(255,255,255,0) 100%);
+  transform:translateX(-120%) skewX(-14deg);pointer-events:none;opacity:0;
+}
+.fussmarke:hover::after{animation:glanz .9s var(--takt) forwards}
+@keyframes glanz{
+  0%{transform:translateX(-120%) skewX(-14deg);opacity:0}
+  15%{opacity:1}
+  100%{transform:translateX(480%) skewX(-14deg);opacity:0}
+}
+@media (prefers-reduced-motion:reduce){.fussmarke:hover{transform:none}.fussmarke:hover::after{animation:none}}
 /* Feste Feldhoehe fuer das Logo. Die beiden Logos haben sehr unterschiedliche
    Seitenverhaeltnisse, ohne festes Feld beginnt der Text darunter versetzt. */
 .fussmarke__logofeld{
