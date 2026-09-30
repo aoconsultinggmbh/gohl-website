@@ -832,9 +832,11 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
   .wahl__kopf .wahl__logo{height:34px}
   .wahl--gohl .wahl__kopf .wahl__logo{height:42px}
   /* leichter Schleier oben auf dem Foto, damit Logo und Nummer ruhig sitzen */
+  /* Schleier wie am Desktop: Elster dunkel, Gohl creme, ueber dem ganzen Foto,
+     oben etwas dichter fuer das Logo */
   .wahl__bild::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(180deg,rgba(26,26,26,.28) 0%,rgba(26,26,26,0) 45%)}
-  .wahl--gohl .wahl__bild::after{background:linear-gradient(180deg,rgba(250,248,245,.55) 0%,rgba(250,248,245,0) 45%)}
+    background:linear-gradient(180deg,rgba(26,26,26,.45) 0%,rgba(26,26,26,.22) 100%)}
+  .wahl--gohl .wahl__bild::after{background:linear-gradient(180deg,rgba(250,248,245,.72) 0%,rgba(250,248,245,.45) 100%)}
   .wahl{position:relative}
   .wahl__inhalt{padding:22px 22px 28px;max-width:none}
   .wahl--elster .wahl__inhalt{background:#1A1A1A}
