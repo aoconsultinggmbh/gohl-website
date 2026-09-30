@@ -2,8 +2,8 @@
 titel: status.md — Projektstand Webseite Gohl Consulting und Elster Dental Consulting
 kategorie: Steuerung
 kurzbeschreibung: Aktueller Stand pro Stufe, letzte Session, nächster Schritt, Blocker. Wird am Ende JEDER Session aktualisiert.
-stand: 25.09.2026
-version: 1.8
+stand: 30.09.2026
+version: 1.9
 ---
 
 # Projektstand — Gohl Consulting und Elster Dental Consulting
@@ -82,3 +82,4 @@ Legende: ⬜ offen · 🟡 in Arbeit / nächster Schritt · ✅ fertig · 🔴 b
 | 25.09.2026 | Zweite Rückmeldungsrunde eingearbeitet. Allgemeinmedizin: MVZ-Gründung neu getextet, Koordination ab dem ersten Tag, vom Umbau bis zur Neuplanung. Zahnmedizin: Leistung 01 heißt jetzt „Praxisverkauf und Praxisübernahme" und deckt beide Richtungen ab, die Abtretung von Praxisanteilen bleibt als eigener Punkt. Neuer Abschnitt „Praxisauflösung" mit dem Hinweiskasten „Wann Handlungsbedarf besteht" auf beiden Markenseiten, neue CSS-Bausteine `.hinweis` und `.partner`. Neuer Abschnitt „Partnernetzwerk" über der Kontaktfläche, ebenfalls auf beiden Seiten, mit sechs Logos: Doctolib, Nobel Biocare, bfs health finance, STUSCHE, Schrader Beratung, GRAF MedTalent UG. Logos aufbereitet als WebP mit PNG-Rückfall, beim GRAF-Logo war das Transparenzmuster ins JPEG eingebrannt und wurde herausgerechnet, das bfs-Logo stammt aus der gelieferten PDF. Doctolib erscheint mit dem reinen Logo, das Partner-Abzeichen mit dem Rabatt von 50 Prozent für drei Monate wurde bewusst weggelassen, weil eine auslaufende Aktion sonst falsch auf der Seite stünde. Originale der Logos liegen auf dem Mac unter „Claude outputs/partnerlogos-gohl". |
 | 25.09.2026 | Auf Wunsch der Kundin das Portrait im Abschnitt „Über uns" der Allgemeinmedizin-Seite entfernt (Aufnahme am Baum). Der Abschnitt steht jetzt einspaltig und mittig, neue Regel `.person--ohne-bild`. Die Bilddatei `isabel-gohl-gruenderin-gohl-consulting` bleibt im Projekt, wird aber nirgends mehr eingebunden. |
 | 25.09.2026 | Zwei Fotos aus einer Zahnarztpraxis eingesetzt. Behandlungszimmer (drei Personen) im Kopfbereich der Elster-Seite, Empfang mit Handschlag in der Startseiten-Kachel „Zahnmedizin“. Dazu ein eigenes Vorschaubild 1200 × 630 für soziale Netzwerke. Bildbeschreibungen neutral ohne Namen, bis die Zuordnung der Personen bestätigt ist. Metadaten entfernt. Das Übergangsportrait von Isabel Gohl wird nicht mehr eingebunden, die Datei bleibt im Projekt. Damit zeigt die Startseite nicht mehr zweimal dieselbe Person. |
+| 30.09.2026 | Auf Kundenwunsch die FAQ „Was passiert im Nachbesetzungsverfahren?" von der Allgemeinmedizin-Seite entfernt, sichtbar und im FAQPage-Markup. Beide zählen jetzt fünf Fragen. Die Erwähnung im Leistungstext Praxisabgabe und das Stichwort in `knowsAbout` bleiben. |
