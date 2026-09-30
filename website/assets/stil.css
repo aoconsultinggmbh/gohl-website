@@ -479,7 +479,17 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
   object-position:50% 28%;
   border-radius:var(--radius-gross);box-shadow:var(--schatten);
 }
-html[data-marke="elster"] .hero__medien img{box-shadow:var(--schatten-stark);object-position:50% 18%}
+html[data-marke="elster"] .hero__medien img{box-shadow:var(--schatten-stark);object-position:50% 6%;aspect-ratio:4/3}
+/* Elster-Kopfzeile: kuerzer und breiter, damit der Titel in zwei Zeilen steht */
+html[data-marke="elster"] .hero__text{max-width:46ch}
+html[data-marke="elster"] .hero h1{font-size:clamp(2.2rem,1.4rem + 3.2vw,3.6rem)}
+html[data-marke="elster"] .hero__raster{align-items:center}
+/* Schleier ueber dem Kopfbild (Elster): unten dunkler Anthrazit-Verlauf,
+   oben klar. Bindet das Foto an den dunklen Grund, Gesichter bleiben frei. */
+html[data-marke="elster"] .hero__medien::after{
+  content:"";position:absolute;inset:0;border-radius:var(--radius-gross);pointer-events:none;
+  background:linear-gradient(180deg,rgba(26,26,26,.10) 0%,rgba(26,26,26,.05) 40%,rgba(26,26,26,.55) 100%);
+}
 
 /* Partnernetzwerk. Die Logos liegen auf weissen Feldern, damit sie auf der
    dunklen Elster-Seite genauso sauber stehen wie auf der hellen Gohl-Seite. */
@@ -537,6 +547,12 @@ html[data-marke="elster"] .hero__medien img{box-shadow:var(--schatten-stark);obj
 
 /* Leistungen */
 .leistungen{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2vw,24px)}
+/* Unterstuetzende Leistung: eine Karte ueber die ganze Breite, Text neben dem Symbol */
+.karte--breit{grid-column:1 / -1;display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-items:start}
+.karte--breit .karte__ico{grid-row:1 / span 2}
+.karte--breit h3{grid-column:2}
+.karte--breit p{grid-column:2;max-width:70ch}
+@media (max-width:860px){.karte--breit{display:block}}
 .karte{
   position:relative;padding:clamp(26px,3vw,40px);
   border:1px solid var(--linie);border-radius:var(--radius-gross);
