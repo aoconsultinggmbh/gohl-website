@@ -458,6 +458,36 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
 .start__schluss .fuss__widerruf{color:var(--text-leise)}
 
 /* ===========================================================================
+   6b REFERENZEN: drei Stimmen, gleiche Glaskarten wie die Leistungen
+   =========================================================================== */
+.stimmen{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)}
+.stimme{
+  position:relative;margin:0;padding:clamp(24px,2.6vw,34px);display:flex;flex-direction:column;
+  border:1px solid var(--linie);border-radius:var(--radius-gross);background:var(--grund);
+  box-shadow:0 1px 0 rgba(255,255,255,.06) inset;overflow:hidden;
+  transition:transform .28s var(--takt),border-color .28s var(--takt),box-shadow .28s var(--takt);
+}
+.stimme:hover{transform:translateY(-4px);border-color:var(--akzent);box-shadow:var(--schatten)}
+html[data-marke="elster"] .stimme:hover{box-shadow:var(--schatten-stark)}
+@supports (backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px)){
+  .stimme{background:rgba(250,248,245,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:rgba(255,255,255,.7)}
+  html[data-marke="elster"] .stimme{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.10);box-shadow:0 1px 0 rgba(255,255,255,.08) inset}
+}
+.stimme::before{content:"\201E";position:absolute;top:10px;left:22px;font-size:4.5rem;line-height:1;color:var(--akzent);opacity:.28;font-weight:700}
+.stimme__text{margin:0;padding-top:44px;flex:1}
+.stimme__text p{margin:0;font-size:.98rem;line-height:1.7;color:var(--auf-grund)}
+.stimme__wer{margin-top:22px;padding-top:16px;border-top:1px solid var(--linie);display:flex;flex-direction:column;gap:2px}
+.stimme__wer b{color:var(--auf-grund);font-weight:600}
+.stimme__wer span{font-size:.86rem;color:var(--auf-grund-leise)}
+.stimme__quelle{font-size:.76rem !important;letter-spacing:.04em;opacity:.8}
+#referenzen{position:relative;isolation:isolate}
+#referenzen::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(40% 55% at 80% 30%, rgba(201,169,97,.14), transparent 70%),
+             radial-gradient(38% 50% at 18% 75%, rgba(201,169,97,.09), transparent 70%)}
+@media (max-width:1024px){.stimmen{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){.stimmen{grid-template-columns:1fr}}
+
+/* ===========================================================================
    6  SEKTIONEN DER MARKENBEREICHE
    =========================================================================== */
 
