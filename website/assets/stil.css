@@ -463,6 +463,8 @@ html[data-marke="gohl"] .nav__logo img{height:70px}
    6b REFERENZEN: drei Stimmen, gleiche Glaskarten wie die Leistungen
    =========================================================================== */
 .stimmen{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)}
+/* Nur zwei Stimmen: zwei gleich breite Karten, damit rechts keine Luecke bleibt. */
+.stimmen--zwei{grid-template-columns:repeat(2,1fr)}
 .stimme{
   position:relative;margin:0;padding:clamp(24px,2.6vw,34px);display:flex;flex-direction:column;
   border:1px solid var(--linie);border-radius:var(--radius-gross);background:var(--grund);
@@ -530,11 +532,15 @@ html[data-marke="elster"] .hero__medien::after{
 
 /* Partnernetzwerk. Die Logos liegen auf weissen Feldern, damit sie auf der
    dunklen Elster-Seite genauso sauber stehen wie auf der hellen Gohl-Seite. */
+/* Flex statt Grid: eine unvollstaendige letzte Reihe steht mittig. --spalten je Breite. */
 .partner{
+  --spalten:4;--abstand:clamp(14px,1.8vw,22px);
   list-style:none;margin:0;padding:0;
-  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,22px);
+  display:flex;flex-wrap:wrap;justify-content:center;gap:var(--abstand);
 }
 .partner__feld{
+  flex:0 0 calc((100% - (var(--spalten) - 1) * var(--abstand)) / var(--spalten));
+  box-sizing:border-box;
   display:grid;place-items:center;min-height:104px;
   padding:clamp(18px,2.2vw,28px);
   background:#fff;border:1px solid var(--linie);border-radius:var(--radius-gross);
@@ -933,11 +939,11 @@ html[data-marke="gohl"] .fuss__logo{height:56px}
   .wahl--gohl .wahl__kopf .wahl__nr{color:var(--gold-mittel)}
   .band__raster{grid-template-columns:1fr}
   .leistungen{grid-template-columns:1fr}
-  .partner{grid-template-columns:repeat(2,1fr)}
+  .partner{--spalten:2}
 }
 
 @media (max-width:600px){
-  .partner{grid-template-columns:1fr}
+  .partner{--spalten:1}
   .start__fuss__raster{grid-template-columns:1fr;padding:18px}
   .kopfkarte{grid-template-columns:1fr;text-align:left}
   .kopfkarte img{width:100%;max-width:220px;aspect-ratio:4/3}
